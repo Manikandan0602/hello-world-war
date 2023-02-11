@@ -27,20 +27,20 @@
 	</build>
 	<repositories>
     <repository>
-      <id>maven-3-group</id>
-      <url>http://35.86.206.246:8081/repository/mymaven-group/</url>
+      <id>maven_group</id>
+      <url>http://35.86.206.246:8081/repository/maven_group/</url>
     </repository>
   </repositories>
 
     <distributionManagement>
     <snapshotRepository>
       <uniqueVersion>false</uniqueVersion>
-      <id>maven-3-snapshots</id>
-      <url>http://35.86.206.246:8081/repository/mymaven-snapshots/</url>
+      <id>maven_snapshots</id>
+      <url>http://35.86.206.246:8081/repository/maven_snapshots/</url>
     </snapshotRepository>
     <repository>
-      <id>maven-3-releases</id>
-      <url>http://35.86.206.246:8081/repository/mymaven-releases/</url>
+      <id>maven_releases</id>
+      <url>http://35.86.206.246:8081/repository/maven_releases/</url>
     </repository>
   </distributionManagement>
 
