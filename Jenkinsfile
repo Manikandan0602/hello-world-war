@@ -11,7 +11,7 @@ pipeline{
                 }
             }
         }
-        /*stage("unit testing"){
+        stage("unit testing"){
             steps{
                 
                 sh 'mvn test'
@@ -36,13 +36,13 @@ pipeline{
                         -Dsonar.projectKey=hello-world-war \
                         -Dsonar.sources=. \
                         -Dsonar.java.binaries=target \
-                        -Dsonar.host.url=http://34.218.238.209:9000 \
+                        -Dsonar.host.url=http://34.220.100.149:9000 \
                         -Dsonar.login=sqp_4245d946c5ac6bbdf64df8c32431c278f5c75367"
     
                     }
                 }
             }
-        }*/
+        }
         stage("upload artifact"){
             steps{
                sh 'mvn -s settings.xml deploy'
