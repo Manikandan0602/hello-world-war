@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.efsavage</groupId>
 	<artifactId>hello-world-war</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.0-${v}</version>
 	<packaging>war</packaging>
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
@@ -28,7 +28,7 @@
 	<repositories>
     <repository>
       <id>maven_group</id>
-      <url>http://35.86.206.246:8081/repository/maven_group/</url>
+      <url>http://44.233.222.255:8081/repository/maven_group/</url>
     </repository>
   </repositories>
 
@@ -36,11 +36,11 @@
     <snapshotRepository>
       <uniqueVersion>false</uniqueVersion>
       <id>maven_snapshots</id>
-      <url>http://35.86.206.246:8081/repository/maven_snapshots/</url>
+      <url>http://44.233.222.255:8081/repository/maven_snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>maven_releases</id>
-      <url>http://35.86.206.246:8081/repository/maven_releases/</url>
+      <url>http://44.233.222.255:8081/repository/maven_releases/</url>
     </repository>
   </distributionManagement>
 

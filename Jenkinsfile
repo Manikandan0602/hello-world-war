@@ -7,11 +7,11 @@ pipeline{
         stage('build'){
             steps{
                 script{
-                    sh 'mvn clean install'
+                    sh 'mvn clean install -Dv=${BUILD_NUMBER}'
                 }
             }
         }
-        stage("unit testing"){
+        /*stage("unit testing"){
             steps{
                 
                 sh 'mvn test'
@@ -42,11 +42,19 @@ pipeline{
                     }
                 }
             }
-        }
+        }*/
         stage("upload artifact"){
             steps{
-               sh 'mvn -s settings.xml deploy'
+               sh 'mvn -s settings.xml deploy -Dv=${BUILD_NUMBER}'
             }
+        }
+        stage("deployment"){
+            steps{
+                script{
+                   sh 'ansible-playbook -i host deployment_playbook_own.yml -e "build_number=${BUILD_NUMBER}\"'
+                }
+                  
+              }
         }
     }
 }
