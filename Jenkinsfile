@@ -19,7 +19,7 @@ pipeline{
             post{
                 success{
                      echo "junit testing is success,publishing report"
-                     junit '**/surefire-reports/*.xml'
+                     junit 'target/surefire-reports/*.xml'
                 
                 }
                 failure{
