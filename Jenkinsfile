@@ -51,7 +51,7 @@ pipeline{
         stage("deployment"){
             steps{
                 script{
-                   sh 'ansible-playbook -i host deployment_playbook_own.yml -e "build_number=${BUILD_NUMBER}\"'
+                   sh 'ansible-playbook -i host -e "build_number=${BUILD_NUMBER}\"'
                 }
                   
               }
