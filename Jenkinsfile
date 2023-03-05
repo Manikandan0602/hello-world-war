@@ -48,13 +48,5 @@ pipeline{
                sh 'mvn -s settings.xml deploy -Dv=${BUILD_NUMBER}'
             }
         }
-        stage("deployment"){
-            steps{
-                script{
-                   sh 'ansible-playbook -i host -e "build_number=${BUILD_NUMBER}\"'
-                }
-                  
-              }
-        }
     }
 }
