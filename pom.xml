@@ -28,7 +28,7 @@
 	<repositories>
     <repository>
       <id>maven_group</id>
-      <url>http://35.93.107.248:8081/repository/maven_group/</url>
+      <url>http://35.81.169.145:8081/repository/maven_group/</url>
     </repository>
   </repositories>
 
@@ -36,11 +36,11 @@
     <snapshotRepository>
       <uniqueVersion>false</uniqueVersion>
       <id>maven_snapshots</id>
-      <url>http://35.93.107.248:8081/repository/maven_snapshots/</url>
+      <url>http://35.81.169.145:8081/repository/maven_snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>maven_releases</id>
-      <url>http://35.93.107.248:8081/repository/maven_releases/</url>
+      <url>http://35.81.169.145:8081/repository/maven_releases/</url>
     </repository>
   </distributionManagement>
 
